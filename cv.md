@@ -21,6 +21,20 @@ developer. I am open to new assignments, ideas, and knowledge.
 
 ## Code examples
 
+```
+function compareTriplets(a, b) {
+    let c = [0, 0];
+    for (let i = 0; i <= a.length - 1; i++) {
+        if (a[i] > b[i]) {
+        c[0] = c[0]+1; 
+        } else if (a[i] < b[i]) {
+            c[1] = c[1]+1;
+        }
+    }
+    return c;
+}
+```
+
 ## Experience
 ### Systems Analyst, Company group Extrim, Yekaterinburg
 10/2016 - 10/2019
