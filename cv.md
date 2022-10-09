@@ -56,6 +56,8 @@ edited and created multidimensional models in Schema Workbench.
 - Defined and documented detailed business requirements.
 ## Education
 - Data4You, Jul 2022
+- FreeCodeCamp Responsive Web Design, Jul 2022
+- FreeCodeCamp JavaScript Algorithms and Data Structures, Jul 2022
 - Master’s Degree: Information Technology – 2013, Ural State Technical University
 ## Languages
 - English – B1 
