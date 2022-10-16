@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV. HTML, CSS & Git Basics</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="title">
+            <h1 class="title__h1">Irina Koroleva</h1>
+            <h2 class="title__h2">Junior Front-end Developer</h2>
+            <img class="title__photo" src="" alt="Profile picture">
+        </section>
+        <section class="contacts">
+            <ul class="contact__list">
+                <li class="contact__list__item">Phone: +420 603982677</li>
+                <li class="contact__list__item">Email: prsml.ellisson@gmail.com</li>
+            </ul>
+        </section>
+    </header>
+    <main class="main-container">
+        <!--  SUMMARY -->
+        <section class="summary">
+            <h2 class="summary section-header">Summary</h2>
+            <p class="summary item">I’m an entry level frontend developer with experience in Business analytics. So
+                far, I’ve been describing
+                business processes and developing technical documentation. However, I’ve always been keen on the
+                technical part of different systems, so I’ve decided to switch to software engineering. I enrolled to
+                the web development course in order to continue as a front-end developer. I am open to new assignments,
+                ideas, and knowledge.</p>
+        </section>
+
+        <!--  SKILLS -->
+        <section class="skills">
+            <h2 class="skills section-header">Skills</h2>
+            <ul class="skills list">
+                <li class="skills list__item">HTML&CSS</li>
+                <li class="skills list__item">JavaScript</li>
+                <li class="skills list__item">React</li>
+                <li class="skills list__item">PHP</li>
+                <li class="skills list__item">Git</li>
+            </ul>
+        </section>
+
+        <!--  CODE EXAMPLE -->
+        <section class="code-example">
+            <h2 class="code-example section-header">Code example</h2>
+            <code class="code-example wrapper">
+                <pre>
+                function compareTriplets(a, b) {
+                    let c = [0, 0];
+                    for (let i = 0; i <= a.length - 1; i++) {
+                        if (a[i] > b[i]) {
+                        c[0] = c[0]+1; 
+                        } else if (a[i] < b[i]) {
+                            c[1] = c[1]+1;
+                        }
+                    }
+                    return c;
+                }</pre>
+            </code>
+        </section>
+
+        <!--  WORK EXPERIENCE -->
+        <section class="work-experience">
+            <h2 class="work-experience section-header">Work Experience</h2>
+            <section class="job-item">
+                <div class="job-details">
+                    <h3 class="job-details__position">Systems Analyst</h3>
+                    <h4 class="job-details__company">Company group Extrim, Yekaterinburg</h4>
+                    <p class="job-details__terms">10/2016 - 10/2019</p>
+                </div>
+                <div class="job-summary">
+                    <ul class="job-summary list">
+                        <li class="job-summary list__item">Identified business use cases and discussed user requirements
+                            with the customer.</li>
+                        <li class="job-summary list__item">Planned and defined tasks for software developers.</li>
+                        <li class="job-summary list__item">Worked on systems integration projects, and created
+                            documentation describing these
+                            processes.</li>
+                        <li class="job-summary list__item">Prepared templates for the reporting system. Analyzed the key
+                            points of reports and
+                            defined detailed business requirements for creating reports.</li>
+                        <li class="job-summary list__item">Developed interactive reports and dashboards with Pentaho
+                            Mondrian cubes, edited and
+                            created multidimensional models in Schema Workbench.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="job-item">
+                <div class="job-details">
+                    <h3 class="job-details position">Analyst</h3>
+                    <h4 class="job-details company">ACS, Yekaterinburg</h4>
+                    <p class="job-details terms">07/2011 - 10/2016</p>
+                </div>
+                <div class="job-summary">
+                    <ul class="job-summary list">
+                        <li class="job-summary list__item">Developed technical documentation.</li>
+                        <li class="job-summary list__item">Created XML schemas and XSLT transformations.</li>
+                        <li class="job-summary list__item">Wrote user documentation, and defined user requirements.</li>
+                        <li class="job-summary list__item">Supported a business system including resolving user errors.
+                        </li>
+                        <li class="job-summary list__item">Defined and documented detailed business requirements.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <!--  EDUCATION  -->
+        <section class="education">
+            <h2 class="education section-header">Education</h2>
+            <div class="education-item">
+                <h4 class="education-item company">Coding Bootcamp Praha, Prague</h4>
+                <p class="education-item terms">07/2011 - 10/2016</p>
+                <ul class="education-item list">
+                    <li class="education-item list__item">Full-time educational program with learning JavaScript, React
+                        and PHP
+                        (Laravel framework). </li>
+                    <li class="education-item list__item">Using Git for team collaboration, understanding how to work in
+                        an Agile team.
+                    </li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <h4 class="education-item company">Ural Federal University, Yekaterinburg</h4>
+                <p class="education-item terms">09/2007 - 07/2013</p>
+                <p class="education-item discription">Fundamental Computer Science and Information Technologies,
+                    Master's degree </p>
+            </div>
+        </section>
+
+        <!--  LANGUAGES  -->
+        <section class="languages">
+            <h2 class="languages section-header">Education</h2>
+            <ul class="languages list">
+                <li class="languages list__item">English – B1</li>
+                <li class="languages list__item">Czech – A2</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <h2 class="footer-header">Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. -->
+        <ul class="contact list">
+            <li class="contact list__item"><a href="mailto:prsml.ellisson@gmail.com">prsml.ellisson@gmail.com</a></li>
+            <li class="contact list__item"><a href="https://www.linkedin.com/in/irina-koroleva-al/"
+                    target="_blank">LinkedIn</a></li>
+            <li class="contact list__item"><a href="https://github.com/ikoroleva" target="_blank">Github</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
