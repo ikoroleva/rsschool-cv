@@ -88,22 +88,24 @@ nav {
     padding: 0;
 }
 
-.nav.list>a {
-    text-decoration: none;
+.nav.list>li {
+
     background: rgba(43, 58, 103);
     text-align: left;
     padding: .5rem 2rem;
 
 }
 
-.nav.list>a:hover {
+
+.nav.list>li:hover {
     background: rgb(43, 58, 103, 80%);
     color: #ffffff;
 
 }
 
-.nav.list__item {
+.nav.list__item>a {
     color: #ffffff;
+    text-decoration: none;
     font-weight: 300;
     font-size: .9rem;
     /* padding: .5rem; */
@@ -142,7 +144,8 @@ section {
     text-align: justify;
 }
 
-.code-example.wrapper>pre {
+.wrapper>pre {
+    overflow: auto;
     background-color: #ebebeb;
     border-radius: .4rem;
     min-width: 70%;
@@ -188,6 +191,14 @@ footer {
     align-items: center;
 }
 
+.footer.contact-item>a {
+    color: #343434;
+}
+
+.footer.contact-item>a:hover {
+    text-decoration: none;
+}
+
 .course-info {
     display: flex;
     flex-direction: column;
@@ -202,9 +213,6 @@ footer {
     max-width: 150px;
 }
 
-a:hover {
-    text-decoration: none;
-}
 
 @media screen and (min-width: 800px) {
 
@@ -234,7 +242,7 @@ a:hover {
         padding: 0;
     }
 
-    .nav.list>a {
+    .nav.list>li {
         min-width: 16.7%;
         text-align: center;
         padding: .5rem 0;
