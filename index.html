@@ -6,27 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV. HTML, CSS & Git Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <section class="title">
-            <h1 class="title__h1">Irina Koroleva</h1>
-            <h2 class="title__h2">Junior Front-end Developer</h2>
-            <img class="title__photo" src="" alt="Profile picture">
+            <figure class="photo">
+                <img src="img/profile-photo.JPG" alt="Profile photo">
+            </figure>
+            <section class="info">
+                <h1>Irina Koroleva</h1>
+                <h2>Junior Frontend Developer</h2>
+                <section class="contacts">
+                    <div class="contact-item">
+                        <img src="img/map-marker-outline.svg" alt="Map marker icon">
+                        <p class="">Prague, Czech Republic</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="img/phone.svg" alt="Phone icon">
+                        <p class="">+420 603982677</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="img/email.svg" alt="Email icon">
+                        <p class="">prsml.ellisson@gmail.com</p>
+                    </div>
+                </section>
+            </section>
         </section>
-        <section class="contacts">
-            <ul class="contact__list">
-                <li class="contact__list__item">Phone: +420 603982677</li>
-                <li class="contact__list__item">Email: prsml.ellisson@gmail.com</li>
+
+        <nav class="nav">
+            <ul class="nav list">
+                <a href="#summary">
+                    <li class="nav list__item">Summary</li>
+                </a>
+                <a href="#skills">
+                    <li class="nav list__item">Skills</li>
+                </a>
+                <a href="#code-example">
+                    <li class="nav list__item">Code example</li>
+                </a>
+                <a href="#work-experience">
+                    <li class="nav list__item">Experience</li>
+                </a>
+                <a href="#education">
+                    <li class="nav list__item">Education</li>
+                </a>
+                <a href="#languages">
+                    <li class="nav list__item">Languages</li>
+                </a>
             </ul>
-        </section>
+        </nav>
+
     </header>
     <main class="main-container">
         <!--  SUMMARY -->
-        <section class="summary">
+        <section class="summary" id="summary">
             <h2 class="summary section-header">Summary</h2>
-            <p class="summary item">I’m an entry level frontend developer with experience in Business analytics. So
+            <p class="summary item">I’m an entry level frontend developer with experience in business analytics. So
                 far, I’ve been describing
                 business processes and developing technical documentation. However, I’ve always been keen on the
                 technical part of different systems, so I’ve decided to switch to software engineering. I enrolled to
@@ -35,7 +75,7 @@
         </section>
 
         <!--  SKILLS -->
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="skills section-header">Skills</h2>
             <ul class="skills list">
                 <li class="skills list__item">HTML&CSS</li>
@@ -47,32 +87,35 @@
         </section>
 
         <!--  CODE EXAMPLE -->
-        <section class="code-example">
+        <section class="code-example" id="code-example">
             <h2 class="code-example section-header">Code example</h2>
             <code class="code-example wrapper">
-                <pre>
-                function compareTriplets(a, b) {
-                    let c = [0, 0];
-                    for (let i = 0; i <= a.length - 1; i++) {
-                        if (a[i] > b[i]) {
-                        c[0] = c[0]+1; 
-                        } else if (a[i] < b[i]) {
-                            c[1] = c[1]+1;
-                        }
-                    }
-                    return c;
-                }</pre>
+    <pre>
+
+    function compareTriplets(a, b) {
+        let c = [0, 0];
+        for (let i = 0; i <= a.length - 1; i++) {
+            if (a[i] > b[i]) {
+            c[0] = c[0]+1; 
+            } else if (a[i] < b[i]) {
+                c[1] = c[1]+1;
+            }
+        }
+        return c;
+    }
+
+</pre>
             </code>
         </section>
 
         <!--  WORK EXPERIENCE -->
-        <section class="work-experience">
-            <h2 class="work-experience section-header">Work Experience</h2>
+        <section class="work-experience" id="work-experience">
+            <h2 class="work-experience section-header">Experience</h2>
             <section class="job-item">
                 <div class="job-details">
-                    <h3 class="job-details__position">Systems Analyst</h3>
-                    <h4 class="job-details__company">Company group Extrim, Yekaterinburg</h4>
-                    <p class="job-details__terms">10/2016 - 10/2019</p>
+                    <h3 class="job-details position">Systems Analyst</h3>
+                    <h4 class="job-details company">Company group EXTRIM, Yekaterinburg</h4>
+                    <p class="job-details terms">Oct 2016 — Oct 2019</p>
                 </div>
                 <div class="job-summary">
                     <ul class="job-summary list">
@@ -95,7 +138,7 @@
                 <div class="job-details">
                     <h3 class="job-details position">Analyst</h3>
                     <h4 class="job-details company">ACS, Yekaterinburg</h4>
-                    <p class="job-details terms">07/2011 - 10/2016</p>
+                    <p class="job-details terms">Jul 2011 - Oct 2016</p>
                 </div>
                 <div class="job-summary">
                     <ul class="job-summary list">
@@ -111,11 +154,18 @@
         </section>
 
         <!--  EDUCATION  -->
-        <section class="education">
+        <section class="education" id="education">
             <h2 class="education section-header">Education</h2>
-            <div class="education-item">
+            <section class="education-item">
+                <h4 class="education-item company">RS School</h4>
+                <p class="education-item terms">Sep 2022</p>
+                <ul class="education-item list">
+                    <li class="education-item list__item">Course «JS/Frontend development course» (in progress)</li>
+                </ul>
+            </section>
+            <section class="education-item">
                 <h4 class="education-item company">Coding Bootcamp Praha, Prague</h4>
-                <p class="education-item terms">07/2011 - 10/2016</p>
+                <p class="education-item terms">May 2022 - Jul 2022</p>
                 <ul class="education-item list">
                     <li class="education-item list__item">Full-time educational program with learning JavaScript, React
                         and PHP
@@ -124,35 +174,52 @@
                         an Agile team.
                     </li>
                 </ul>
-            </div>
-            <div class="education-item">
+            </section>
+            <section class="education-item">
                 <h4 class="education-item company">Ural Federal University, Yekaterinburg</h4>
-                <p class="education-item terms">09/2007 - 07/2013</p>
-                <p class="education-item discription">Fundamental Computer Science and Information Technologies,
-                    Master's degree </p>
-            </div>
+                <p class="education-item terms">Sep 2007 - Jun 2013</p>
+                <ul class="education-item list">
+                    <li class="education-item list__item">Fundamental Computer Science and Information Technologies,
+                        Master's degree </p>
+                    </li>
+            </section>
         </section>
 
         <!--  LANGUAGES  -->
-        <section class="languages">
-            <h2 class="languages section-header">Education</h2>
+        <section class="languages" id="languages">
+            <h2 class="languages section-header">Languages</h2>
             <ul class="languages list">
                 <li class="languages list__item">English – B1</li>
                 <li class="languages list__item">Czech – A2</li>
+                <li class="languages list__item">Russian – Native</li>
             </ul>
         </section>
 
     </main>
     <footer class="footer">
-        <h2 class="footer-header">Let's Keep in Touch!</h2>
 
         <!-- Social media and contact links. -->
-        <ul class="contact list">
-            <li class="contact list__item"><a href="mailto:prsml.ellisson@gmail.com">prsml.ellisson@gmail.com</a></li>
-            <li class="contact list__item"><a href="https://www.linkedin.com/in/irina-koroleva-al/"
-                    target="_blank">LinkedIn</a></li>
-            <li class="contact list__item"><a href="https://github.com/ikoroleva" target="_blank">Github</a></li>
-        </ul>
+        <section class="footer-contacts">
+            <div class="footer contact-item">
+                <img src="img/email.svg" alt="Email icon">
+                <a href="mailto:prsml.ellisson@gmail.com">prsml.ellisson@gmail.com</a>
+            </div>
+            <div class="footer contact-item">
+                <img src="img/linkedin.svg" alt="LinkedIn icon">
+                <a href="https://www.linkedin.com/in/irina-koroleva-al/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="footer contact-item">
+                <img src="img/github.svg" alt="Github icon">
+                <a href="https://github.com/ikoroleva" target="_blank">Github</a>
+            </div>
+        </section>
+        <section class="course-info">
+            <a class="course-info link" href="https://rs.school/"><img class="course-logo" src="img/logo-rsschool3.png"
+                    alt="course logo">
+            </a>
+            <p class="course-info name">The Rolling Scopes, October, 2022</p>
+        </section>
+
     </footer>
 
 </body>
