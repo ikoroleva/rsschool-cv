@@ -10,10 +10,15 @@ html {
 
 body {
     color: #343434;
-    margin: 0 auto;
     font-family: 'Inter', sans-serif;
+
+}
+
+.container-centered {
     max-width: 1200px;
     width: 85%;
+    margin: 2rem auto;
+    box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%);
 }
 
 .header {
@@ -30,7 +35,7 @@ body {
 }
 
 .photo {
-    margin: 1rem;
+    margin: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +119,7 @@ nav {
 }
 
 section {
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .summary,
@@ -203,7 +208,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem;
+    padding: 1rem 0 2.5rem 0;
     margin: 0;
     font-size: .8rem;
     font-weight: 300;
@@ -243,7 +248,7 @@ footer {
     }
 
     .nav.list>li {
-        min-width: 16.7%;
+        min-width: 16.67%;
         text-align: center;
         padding: .5rem 0;
 
