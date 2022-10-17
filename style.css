@@ -1,0 +1,287 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.container-centered {
+    max-width: 1200px;
+    width: 85%;
+    margin: 2rem auto;
+    box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* margin: 3rem 0; */
+}
+
+.photo {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.photo>img {
+    max-width: 250px;
+    border-radius: 50%;
+    border: #535353;
+}
+
+.info {
+    margin: 1rem;
+    text-align: center;
+}
+
+.info>h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+}
+
+.info>h2 {
+    font-size: 1.2rem;
+    color: #535353;
+    font-weight: 300;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.contact-item>img {
+    width: 25px;
+    margin: .5rem;
+}
+
+.contact-item>p {
+    margin: .5rem 0;
+}
+
+nav {
+    margin: 0 0 1rem 0;
+}
+
+.nav.list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav.list>li {
+
+    background: rgba(43, 58, 103);
+    text-align: left;
+    padding: .5rem 2rem;
+
+}
+
+
+.nav.list>li:hover {
+    background: rgb(43, 58, 103, 80%);
+    color: #ffffff;
+
+}
+
+.nav.list__item>a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: .9rem;
+    /* padding: .5rem; */
+    display: inline-block;
+
+}
+
+section {
+    padding: 1rem 2rem;
+}
+
+.summary,
+.skills,
+.code-example,
+.work-experience,
+.education,
+.languages {
+    background: #ffffff;
+}
+
+.section-header {
+    padding: .5rem 0;
+    margin: 0;
+    color: rgba(43, 58, 103);
+    ;
+}
+
+.item {
+    text-align: justify;
+    line-height: 1.5;
+
+}
+
+.list__item {
+    line-height: 2;
+    text-align: justify;
+}
+
+.wrapper>pre {
+    overflow: auto;
+    background-color: #ebebeb;
+    border-radius: .4rem;
+    min-width: 70%;
+    margin: 1rem auto;
+
+}
+
+.company {
+    margin: 0;
+    color: #535353;
+    font-weight: 400;
+}
+
+.education-item.company {
+    font-weight: 700;
+}
+
+.terms {
+    color: #535353;
+    font-weight: 300;
+}
+
+
+footer {
+    background: #F9F3F1ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer.contact-item>a {
+    color: #343434;
+}
+
+.footer.contact-item>a:hover {
+    text-decoration: none;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 2.5rem 0;
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.course-logo {
+    max-width: 150px;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 3rem 0;
+    }
+
+    .info {
+        margin: 1rem 2rem;
+        text-align: left;
+    }
+
+
+    .contact-item {
+        justify-content: flex-start;
+    }
+
+
+
+    .nav.list {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav.list>li {
+        min-width: 16.67%;
+        text-align: center;
+        padding: .5rem 0;
+
+    }
+
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 20px;
+    }
+
+    .footer-contacts {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+
+        justify-content: center;
+    }
+}
+
+/* @media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        line-height: 1;
+    }
+
+    .contact-list a {
+        padding: 5px;
+    }
+} */
